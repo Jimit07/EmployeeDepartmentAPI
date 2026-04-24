@@ -1,0 +1,90 @@
+<!--<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Employee Department </title>>
+</head>
+
+<body>
+
+    <h1>Employee Department Management System</h1>
+
+
+    <div class="Container">
+        <div class="Section">
+            <h2>Departments</h2>
+
+            <form data-bind="Submit:addDepartment">
+
+                <input type="text" data-bind="value:newDepartmentName" placeholder="New Department Name" required/>
+                <button type="submit">Add Department</button>
+
+            </form>
+
+            <table>
+                <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Actions</td>
+                </tr>
+                </thead>
+
+                <tbody data-bind="forEach:Departments">
+                    <tr>
+                        <td data-bind="text:name"></td>  
+                        <td>
+                            <button data-bind="click: $parent.editItem">Edit</button>
+                            <button data-bind="click: $parent.deleteDepartment">Delete</button>>
+                        </td> 
+                    </tr> 
+                </tbody>
+            </table>
+
+            <div class=" Section">
+                <h2>Employees</h2>
+
+                <form data-bind="Submit:addEmployee">
+                    <input data-bind="value:newEmployee().name" placeholder="Employee Name" required/>
+                    <input data-bind="value:newEmployee().EmpId" placeholder="Employee Id">
+                    <select data-bind="value:newEmployee().DepartmentId, optionsCaption:'Select department'" ></select>
+                    <button type="submit">Add Employee</button>>
+                </form>>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee Id</th>
+                            <th>Department</th>        
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="forEach:Employees">
+                        <tr>
+                            <td data-bind="text: name"></td>
+                            <td data-bind="text: empId"></td>
+                            <td data-bind="text: $parent.getDepartmentName(DepartmentId)"></td>
+                            <td>
+                                <button data-bind="click: $parent.editItem">Edit</button>
+                                <button data-bind="click: $parent.deleteEmployee">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>  
+                </table>
+            
+
+            </div>
+        </div>
+
+    </div>
+    <div>
+        
+    </div> 
+    <script>
+
+    </script>
+
+</body>
+
+</html>-->
+
